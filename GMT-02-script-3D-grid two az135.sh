@@ -25,10 +25,10 @@ grdview kkt_relief.nc -J -R -JZ2i -CrainbowKKT.cpt -p135/30 -Qsm -N-7500+glightg
 # Step-8. Add GMT logo
 gmt logo -Dx10.5/0.0+o0.0c/-5.5c+w2c -O -K >> $ps
 # Step-9. Add title
-gmt pstext -R0/10/0/10 -Jx1 -X0.0c -Y1.0c -N -O -K \
+gmt pstext -R0/10/0/10 -Jx1 -X-0.5c -Y1.0c -N -O -K \
 -F+f10p,Palatino-Roman,black+jLB >> $ps << EOF
-1.0 10.0 Overlay of the 3D topographic model on the 2D grid contour plot
-0.5 9.5 Region: Kamchatka Peninsula, Kuril-Kamchatka Trench, Kuril Islands
+0.0 10.0 Composite overlay of the 3D topographic mesh model on top of the 2D grid contour plot
+1.0 9.5 Region: Kamchatka Peninsula, Kuril-Kamchatka Trench, Kuril Islands
 EOF
 gmt pstext -R0/10/0/10 -Jx1 -X1.5c -Y1.0c -N -O \
 -F+f8p,Palatino-Roman,dimgray+jLB >> $ps << EOF
