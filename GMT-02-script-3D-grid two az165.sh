@@ -1,5 +1,5 @@
 #!/bin/sh
-# Purpose: 3D grid from the ETOPO5 from 5 arc minute global data set (here: Kuril-Kamchatka Trench)
+# Purpose: 3D grid, 165/30 azimuth, from the ETOPO5 from 5 arc min (here: Kuril-Kamchatka Trench)
 # GMT modules: grdcut, grd2cpt, grdcontour, pscoast, grdview, logo, psconvert
 # Unix prog: rm
 #
@@ -23,7 +23,7 @@ gmt logo -Dx10.5/0.0+o0.0c/-5.5c+w2c -O -K >> $ps
 # Step-8. Add title
 gmt pstext -R0/10/0/10 -Jx1 -X0.0c -Y0.0c -N -O -K \
 -F+f10p,Palatino-Roman,black+jLB >> $ps << EOF
-1.0 10.0 Overlay of the 3D bathymetric model on the 2D geoid contour plot
+1.0 10.0 Overlay of the 3D topographic model on the 2D geoid contour plot
 0.5 9.5 Region: Kamchatka Peninsula, Kuril-Kamchatka Trench, Kuril Islands
 EOF
 gmt pstext -R0/10/0/10 -Jx1 -X0.0c -Y0.0c -N -O \
